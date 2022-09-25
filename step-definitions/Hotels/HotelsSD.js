@@ -1,11 +1,10 @@
 const { Given, When, Then } = require("@wdio/cucumber-framework");
-const Homepage = require("../../POM/HomePage");
-const hpage = new Homepage()
-const fpage = new feedBack()
+const { expect } = require("chai");
+const Feedbackpage = require("../../Pages/Hotels/Feedbackpage");
+const Homepage = require("../../Pages/Hotels/Homepage");
+const fpage = new Feedbackpage();
+const hpage = new Homepage();
 
-
-
-// T-18 -->
 Given(/^I am on hotels landing page$/, async function(){
     await browser.url('/');
     await browser.pause(2000);
@@ -212,4 +211,3 @@ Then(/^I verify minus-button is disabled$/, async function(){
 Then(/^I verify Children-age dropdown is NOT Displayed$/, async function(){
     expect(await hpage.childrenAgeDropdownisDisplayed(), 'Dropdowns displayed').to.be.false;
 })
-

@@ -1,7 +1,4 @@
-const { command } = require("webdriver");
-
 class Commands{
-
     async findWebElement(locator) {
         await $(locator).waitForDisplayed();
         return await $(locator);
@@ -104,6 +101,7 @@ class Commands{
         await browser.maximizeWindow();
     }
 
-
+ 
 }
-module.exports = command
+
+module.exports = Commands;
