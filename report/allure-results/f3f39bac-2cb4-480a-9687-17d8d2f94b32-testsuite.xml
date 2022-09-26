@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663777943081' stop='1663777943094'>
+    <name>hotel testcases</name>
+    <title>hotel testcases</title>
+    <test-cases>
+        <test-case start='1663777943086' status='broken' stop='1663777943090'>
+            <name>Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</name>
+            <title>Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1663777943088' status='broken' stop='1663777943089'>
+                    <name>Given you are on hotels.com</name>
+                    <title>Given you are on hotels.com</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663777943090' status='broken' stop='1663777943090'>
+                    <name>When you click on travelers</name>
+                    <title>When you click on travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663777943090' status='broken' stop='1663777943090'>
+                    <name>Then select adults as 6</name>
+                    <title>Then select adults as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663777943090' status='broken' stop='1663777943090'>
+                    <name>When select children as 3</name>
+                    <title>When select children as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnosoftProject\TechnosoftProject\features\hotels\hotels.feature):1:1
+                	at Scenario(Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.):4:1
+                	at Step(select children as 3):8:1
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

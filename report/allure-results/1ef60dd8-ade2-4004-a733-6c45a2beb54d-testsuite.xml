@@ -1,0 +1,576 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664037991661' stop='1664038004238'>
+    <name>Project 1</name>
+    <title>Project 1</title>
+    <test-cases>
+        <test-case start='1664037991725' status='broken' stop='1664038004154'>
+            <name>TC-18 Verify user can update number of guests on Homepage</name>
+            <title>TC-18 Verify user can update number of guests on Homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664037991727' status='passed' stop='1664037998619'>
+                    <name>Given I am on hotels page</name>
+                    <title>Given I am on hotels page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664037998619' status='passed' stop='1664038000900'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038000900' status='passed' stop='1664038004150'>
+                    <name>Then I select adults as 6</name>
+                    <title>Then I select adults as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004151' status='broken' stop='1664038004153'>
+                    <name>Then I select children as 3</name>
+                    <title>Then I select children as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004155' status='canceled' stop='1664038004156'>
+                    <name>Then I select first child age as 4</name>
+                    <title>Then I select first child age as 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004157' status='canceled' stop='1664038004157'>
+                    <name>Then I select second child age under 1</name>
+                    <title>Then I select second child age under 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004157' status='canceled' stop='1664038004158'>
+                    <name>Then I select third child age 7</name>
+                    <title>Then I select third child age 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004158' status='canceled' stop='1664038004159'>
+                    <name>When I click Done</name>
+                    <title>When I click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004161' status='canceled' stop='1664038004162'>
+                    <name>Then I verify total number of guests in sum of adults and children same as selected on step 3 and 4</name>
+                    <title>Then I verify total number of guests in sum of adults and children same as selected on step 3 and 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-18 Verify user can update number of guests on Homepage):4:5
+                	at Step(I select children as 3):8:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004169' status='broken' stop='1664038004179'>
+            <name>TC-21 Verify verification message for invalid sign in credentials</name>
+            <title>TC-21 Verify verification message for invalid sign in credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004172' status='broken' stop='1664038004173'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004174' status='broken' stop='1664038004174'>
+                    <name>When I click on "Sign in" link</name>
+                    <title>When I click on "Sign in" link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004175' status='broken' stop='1664038004176'>
+                    <name>And I enter "fake@test.com" as email</name>
+                    <title>And I enter "fake@test.com" as email</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004176' status='broken' stop='1664038004177'>
+                    <name>And I enter "#!!!!%&amp;" as password</name>
+                    <title>And I enter "#!!!!%&amp;" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004177' status='broken' stop='1664038004178'>
+                    <name>When I click on Sign In button</name>
+                    <title>When I click on Sign In button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004178' status='broken' stop='1664038004179'>
+                    <name>Then I verify verification message is displayed</name>
+                    <title>Then I verify verification message is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify verification message is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify verification message is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-21 Verify verification message for invalid sign in credentials):16:5
+                	at Step(I verify verification message is displayed):22:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004182' status='broken' stop='1664038004195'>
+            <name>TC-22 Verify error message for invalid data in SignUp form</name>
+            <title>TC-22 Verify error message for invalid data in SignUp form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004184' status='broken' stop='1664038004185'>
+                    <name>Given I am on hotels Homepage</name>
+                    <title>Given I am on hotels Homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004185' status='broken' stop='1664038004186'>
+                    <name>When I click on "Sign in" link</name>
+                    <title>When I click on "Sign in" link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004187' status='broken' stop='1664038004187'>
+                    <name>When I click on SignUp link</name>
+                    <title>When I click on SignUp link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004187' status='broken' stop='1664038004188'>
+                    <name>When I enter "#!@###" as invalid email</name>
+                    <title>When I enter "#!@###" as invalid email</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004188' status='broken' stop='1664038004189'>
+                    <name>When I enter "!@" as invalid firstname</name>
+                    <title>When I enter "!@" as invalid firstname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004189' status='broken' stop='1664038004189'>
+                    <name>When I enter "%^&amp;" as invalid lastname</name>
+                    <title>When I enter "%^&amp;" as invalid lastname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004189' status='broken' stop='1664038004190'>
+                    <name>When I enter "123$wg1" as invalid password</name>
+                    <title>When I enter "123$wg1" as invalid password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004191' status='broken' stop='1664038004191'>
+                    <name>Then I verify "Enter a valid email address" error is displayed</name>
+                    <title>Then I verify "Enter a valid email address" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004192' status='broken' stop='1664038004193'>
+                    <name>Then I verify "First name cannot contain special characters" error is displayed</name>
+                    <title>Then I verify "First name cannot contain special characters" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004193' status='broken' stop='1664038004194'>
+                    <name>Then I verify "Last name cannot contain special characters" error is displayed</name>
+                    <title>Then I verify "Last name cannot contain special characters" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004194' status='broken' stop='1664038004195'>
+                    <name>Then I verify "Keep me signed in" checkbox is displayed and enabled</name>
+                    <title>Then I verify "Keep me signed in" checkbox is displayed and enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004195' status='broken' stop='1664038004195'>
+                    <name>Then I verify "Continue" button is displayed but NOT enabled</name>
+                    <title>Then I verify "Continue" button is displayed but NOT enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify "Continue" button is displayed but NOT enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify "Continue" button is displayed but NOT enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-22 Verify error message for invalid data in SignUp form):28:5
+                	at Step(I verify "Continue" button is displayed but NOT enabled):40:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004198' status='broken' stop='1664038004201'>
+            <name>TC-20 Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>TC-20 Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004200' status='broken' stop='1664038004200'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004200' status='broken' stop='1664038004201'>
+                    <name>When I click on "Sign in" link</name>
+                    <title>When I click on "Sign in" link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004201' status='broken' stop='1664038004201'>
+                    <name>When I click on SignUp link</name>
+                    <title>When I click on SignUp link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004201' status='canceled' stop='1664038004202'>
+                    <name>When I click on “Terms and Conditions” link</name>
+                    <title>When I click on “Terms and Conditions” link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004202' status='canceled' stop='1664038004202'>
+                    <name>Then I verify “Terms and Conditions” page opens in new tab</name>
+                    <title>Then I verify “Terms and Conditions” page opens in new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004202' status='canceled' stop='1664038004202'>
+                    <name>When I click “Privacy Statement” link</name>
+                    <title>When I click “Privacy Statement” link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004202' status='canceled' stop='1664038004203'>
+                    <name>Then I verify “Privacy Statement” page opens in new tab</name>
+                    <title>Then I verify “Privacy Statement” page opens in new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I click on SignUp link" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I click on SignUp link" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-20 Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab):46:5
+                	at Step(I click on SignUp link):49:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004206' status='broken' stop='1664038004207'>
+            <name>TC-24 Verify error is displayed when user submits the empty feedback form</name>
+            <title>TC-24 Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004206' status='broken' stop='1664038004207'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004207' status='canceled' stop='1664038004207'>
+                    <name>When I click on "Sign in"</name>
+                    <title>When I click on "Sign in"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004208' status='canceled' stop='1664038004209'>
+                    <name>When I click on "Feedback"</name>
+                    <title>When I click on "Feedback"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004209' status='canceled' stop='1664038004210'>
+                    <name>When I click on Submit button</name>
+                    <title>When I click on Submit button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004210' status='canceled' stop='1664038004210'>
+                    <name>Then I verify error message is displayed "Please fill in the required information highlighted below."</name>
+                    <title>Then I verify error message is displayed "Please fill in the required information highlighted below."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004211' status='canceled' stop='1664038004211'>
+                    <name>Then I verify star boxes section is in a red dotted box</name>
+                    <title>Then I verify star boxes section is in a red dotted box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-24 Verify error is displayed when user submits the empty feedback form):56:5
+                	at Step(I am on hotels landing page):57:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004213' status='broken' stop='1664038004214'>
+            <name>TC-25 Verify user can submit feedback after completing the feedback form</name>
+            <title>TC-25 Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004214' status='broken' stop='1664038004214'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004215' status='canceled' stop='1664038004215'>
+                    <name>When I click on "Sign in"</name>
+                    <title>When I click on "Sign in"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004215' status='canceled' stop='1664038004215'>
+                    <name>When I click on "Feedback"</name>
+                    <title>When I click on "Feedback"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004215' status='canceled' stop='1664038004215'>
+                    <name>When I select a star-rating</name>
+                    <title>When I select a star-rating</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004219' status='canceled' stop='1664038004219'>
+                    <name>When I enter any comments</name>
+                    <title>When I enter any comments</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004219' status='canceled' stop='1664038004220'>
+                    <name>When I select any option for “How likely are you to return to Hotels.com”</name>
+                    <title>When I select any option for “How likely are you to return to Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004220' status='canceled' stop='1664038004220'>
+                    <name>When I select any answer for “Prior to this visit, have you ever booked on Hotels.com”</name>
+                    <title>When I select any answer for “Prior to this visit, have you ever booked on Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004221' status='canceled' stop='1664038004221'>
+                    <name>When I select any answer for ”Did you accomplish what you wanted to do on this page”</name>
+                    <title>When I select any answer for ”Did you accomplish what you wanted to do on this page”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004221' status='canceled' stop='1664038004222'>
+                    <name>When I click on Submit button</name>
+                    <title>When I click on Submit button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004222' status='canceled' stop='1664038004222'>
+                    <name>Then I verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</name>
+                    <title>Then I verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-25 Verify user can submit feedback after completing the feedback form):65:5
+                	at Step(I am on hotels landing page):66:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664038004226' status='broken' stop='1664038004228'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664038004228' status='broken' stop='1664038004228'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004228' status='canceled' stop='1664038004228'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004228' status='canceled' stop='1664038004229'>
+                    <name>When I select "children" as 2</name>
+                    <title>When I select "children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004229' status='canceled' stop='1664038004229'>
+                    <name>When I verify Children-age dropdown are 2</name>
+                    <title>When I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004229' status='canceled' stop='1664038004229'>
+                    <name>Then I verify Plus-button is enabled</name>
+                    <title>Then I verify Plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004229' status='canceled' stop='1664038004229'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004229' status='canceled' stop='1664038004229'>
+                    <name>When I select "children" as 6</name>
+                    <title>When I select "children" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004230' status='canceled' stop='1664038004230'>
+                    <name>When I verify Children-age dropdown are 6</name>
+                    <title>When I verify Children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004230' status='canceled' stop='1664038004230'>
+                    <name>Then I verify Plus-button is disabled</name>
+                    <title>Then I verify Plus-button is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004230' status='canceled' stop='1664038004230'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004230' status='canceled' stop='1664038004230'>
+                    <name>When I select "children" as 5</name>
+                    <title>When I select "children" as 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004230' status='canceled' stop='1664038004231'>
+                    <name>When I verify Children-age dropdown are 5</name>
+                    <title>When I verify Children-age dropdown are 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004231' status='canceled' stop='1664038004231'>
+                    <name>Then I verify Plus-button is enabled</name>
+                    <title>Then I verify Plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004231' status='canceled' stop='1664038004231'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004231' status='canceled' stop='1664038004231'>
+                    <name>When I select "children" as 0</name>
+                    <title>When I select "children" as 0</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004231' status='canceled' stop='1664038004233'>
+                    <name>Then I verify Children-age dropdown is NOT Displayed</name>
+                    <title>Then I verify Children-age dropdown is NOT Displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004233' status='canceled' stop='1664038004233'>
+                    <name>Then I verify Plus-button is enabled</name>
+                    <title>Then I verify Plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664038004233' status='canceled' stop='1664038004233'>
+                    <name>Then I verify minus-button is disabled</name>
+                    <title>Then I verify minus-button is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I am on hotels landing page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-28 Verify Child-age dropdowns are same as number of Children selected):78:5
+                	at Step(I am on hotels landing page):79:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
