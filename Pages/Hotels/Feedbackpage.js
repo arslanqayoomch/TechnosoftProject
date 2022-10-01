@@ -1,7 +1,7 @@
-const Commands = require("../Commands")
+const Commands = require("../Commands");
 
 class Feedbackpage{
-    commands = new Commands()
+    commands = new Commands();
 
     scrolllocator = "//a[contains(text(),'Hotels.com')]"
     submitBtn = "#submit-button"
@@ -17,44 +17,19 @@ class Feedbackpage{
     didYouAccomplishEnds = "']"
     emailId = "#email_address"
     thankyouMsg = "//h5[contains(text(),'THANK YOU')]"
-
-
-
-    privacyStLinks = "//a[contains(text(),'Privacy Statement')]"
-
-    async verifyTermsAndConditionsNewTab(){
-        const allHandles = await this.commands.getAllWindowHandles();
-        for(let handle of allHandles) {
-            await this.commands.switchToWindowHandle(handle);
-            const currentTitle = await this.commands.getWindowTitle();
-            if(currentTitle.includes('Terms of Service')){
-                return true;
-                break;
-            }
-        }
-    }
-    async clickPrivacyStatement(){
-        const links = await this.commands.findWebElements(this.privacyStLinks);
-        await this.commands.clickWebElement(links[0]);
-    }
-    
-    async verifyPrivacyStNewTab(){
-        const allHandles = await this.commands.getAllWindowHandles();
-        for(let handle of allHandles) {
-            await this.commands.switchToWindowHandle(handle);
-            const currentTitle = await this.commands.getWindowTitle();
-            if(currentTitle.includes('Deals & Discount')){
-                return true;
-                break;
-            }
-        }
-    }
-
-
     
     async verifyThankYouMsgDisplayed(){
         return await this.commands.isWebElementDisplayed(this.thankyouMsg);
-      
+        // const allHandles = await this.commands.getAllWindowHandles();
+        // for(let handle of allHandles) {
+        //     await this.commands.switchToWindowHandle(handle);
+        //     const currentTitle = await this.commands.getWindowTitle();
+        //     if(currentTitle.includes('DirectWord')){
+        //         await this.commands.switchToWindowHandle(handle);
+        //         await this.commands.clickWebElement(rating);
+        //         break;
+        //     }
+        // }
     }
     async didYouAccomplishYesOrNo(value){
         await this.commands.scrollAndFindWebElement(this.emailId);
@@ -66,7 +41,7 @@ class Feedbackpage{
         await this.commands.clickWebElement(locator);
     }
     async selectValueforLikelyToReturn(text){
-        
+        // await this.commands.clickWebElement(this.howLikelyToReturnDropdown);
         return await this.commands.selectFromDropdown(this.howLikelyToReturnDropdown, text);
     }
     async typeInComments(value){
@@ -104,6 +79,6 @@ class Feedbackpage{
     async dottedBoxDisplayed(){
         return await this.commands.isWebElementDisplayed(this.dottedBox);
     }
-}
 
-module.exports = Feedbackpage
+}
+module.exports = Feedbackpage;

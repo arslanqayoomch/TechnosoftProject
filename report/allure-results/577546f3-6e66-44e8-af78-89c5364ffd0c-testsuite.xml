@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664309217554' stop='1664309223517'>
+    <name>Hotels test</name>
+    <title>Hotels test</title>
+    <test-cases>
+        <test-case start='1664309217562' status='passed' stop='1664309223517'>
+            <name>TC-18 Verify user can update number of guests on Homepage</name>
+            <title>TC-18 Verify user can update number of guests on Homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664309217564' status='passed' stop='1664309223516'>
+                    <name>Given I am on hotels homepage</name>
+                    <title>Given I am on hotels homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

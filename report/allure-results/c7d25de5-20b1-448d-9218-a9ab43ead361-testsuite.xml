@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664308040077' stop='1664308040111'>
+    <name>Project 1</name>
+    <title>Project 1</title>
+    <test-cases>
+        <test-case start='1664308040098' status='broken' stop='1664308040107'>
+            <name>TC-18 Verify user can update number of guests on Homepage</name>
+            <title>TC-18 Verify user can update number of guests on Homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664308040104' status='broken' stop='1664308040105'>
+                    <name>Given I am on hotels HomePage</name>
+                    <title>Given I am on hotels HomePage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040106' status='canceled' stop='1664308040106'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040106' status='broken' stop='1664308040107'>
+                    <name>Then I select adults as 6</name>
+                    <title>Then I select adults as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040107' status='broken' stop='1664308040107'>
+                    <name>Then I select children as 3</name>
+                    <title>Then I select children as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040107' status='canceled' stop='1664308040107'>
+                    <name>Then I select first child age as 4</name>
+                    <title>Then I select first child age as 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040107' status='canceled' stop='1664308040108'>
+                    <name>Then I select second child age under 1</name>
+                    <title>Then I select second child age under 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040108' status='canceled' stop='1664308040108'>
+                    <name>Then I select third child age 7</name>
+                    <title>Then I select third child age 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040108' status='canceled' stop='1664308040108'>
+                    <name>When I click Done</name>
+                    <title>When I click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664308040109' status='canceled' stop='1664308040109'>
+                    <name>Then I verify total number of guests in sum of adults and children same as selected on step 3 and 4</name>
+                    <title>Then I verify total number of guests in sum of adults and children same as selected on step 3 and 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I select children as 3" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-18 Verify user can update number of guests on Homepage):4:5
+                	at Step(I select children as 3):8:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

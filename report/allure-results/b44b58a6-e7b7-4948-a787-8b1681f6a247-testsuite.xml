@@ -1,0 +1,102 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664313279082' stop='1664313285215'>
+    <name>Hotels test</name>
+    <title>Hotels test</title>
+    <test-cases>
+        <test-case start='1664313279134' status='broken' stop='1664313285194'>
+            <name>TC-22 Verify error message for invalid data in SignUp form</name>
+            <title>TC-22 Verify error message for invalid data in SignUp form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664313279140' status='passed' stop='1664313285189'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285189' status='broken' stop='1664313285192'>
+                    <name>When I click on "Sign in" link</name>
+                    <title>When I click on "Sign in" link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285194' status='canceled' stop='1664313285195'>
+                    <name>When I click on SignUp link</name>
+                    <title>When I click on SignUp link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285196' status='canceled' stop='1664313285196'>
+                    <name>When I enter "#!@###" as invalid email</name>
+                    <title>When I enter "#!@###" as invalid email</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285197' status='canceled' stop='1664313285198'>
+                    <name>When I enter "!@" as invalid firstname</name>
+                    <title>When I enter "!@" as invalid firstname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285198' status='canceled' stop='1664313285198'>
+                    <name>When I enter "%^&amp;" as invalid lastname</name>
+                    <title>When I enter "%^&amp;" as invalid lastname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285198' status='canceled' stop='1664313285199'>
+                    <name>When I enter "123$wg1" as invalid password</name>
+                    <title>When I enter "123$wg1" as invalid password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285199' status='canceled' stop='1664313285200'>
+                    <name>Then I verify "Enter a valid email address" error is displayed</name>
+                    <title>Then I verify "Enter a valid email address" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285201' status='canceled' stop='1664313285202'>
+                    <name>Then I verify "First name cannot contain special characters" error is displayed</name>
+                    <title>Then I verify "First name cannot contain special characters" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285203' status='canceled' stop='1664313285203'>
+                    <name>Then I verify "Last name cannot contain special characters" error is displayed</name>
+                    <title>Then I verify "Last name cannot contain special characters" error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285203' status='canceled' stop='1664313285204'>
+                    <name>Then I verify "Keep me signed in" checkbox is displayed and enabled</name>
+                    <title>Then I verify "Keep me signed in" checkbox is displayed and enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664313285204' status='canceled' stop='1664313285205'>
+                    <name>Then I verify "Continue" button is displayed but NOT enabled</name>
+                    <title>Then I verify "Continue" button is displayed but NOT enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I click on "Sign in" link" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I click on "Sign in" link" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-22 Verify error message for invalid data in SignUp form):26:5
+                	at Step(I click on "Sign in" link):28:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
