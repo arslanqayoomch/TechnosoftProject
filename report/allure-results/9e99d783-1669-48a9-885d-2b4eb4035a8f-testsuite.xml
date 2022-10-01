@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664311313309' stop='1664311320910'>
+    <name>Hotels test</name>
+    <title>Hotels test</title>
+    <test-cases>
+        <test-case start='1664311313323' status='broken' stop='1664311320907'>
+            <name>TC-21 Verify verification message for invalid sign in credentials</name>
+            <title>TC-21 Verify verification message for invalid sign in credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664311313325' status='passed' stop='1664311320904'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664311320904' status='broken' stop='1664311320905'>
+                    <name>When I click on Sign in link</name>
+                    <title>When I click on Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664311320906' status='broken' stop='1664311320906'>
+                    <name>And I enter username as email</name>
+                    <title>And I enter username as email</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664311320907' status='broken' stop='1664311320907'>
+                    <name>And I enter password as password</name>
+                    <title>And I enter password as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664311320907' status='canceled' stop='1664311320907'>
+                    <name>When I click on Sign In button</name>
+                    <title>When I click on Sign In button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664311320908' status='canceled' stop='1664311320908'>
+                    <name>Then I verify verification message is displayed</name>
+                    <title>Then I verify verification message is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I enter password as password" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I enter password as password" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\a\Desktop\TechnoSoftProject\features\Hotels\hotel.feature):1:1
+                	at Scenario(TC-21 Verify verification message for invalid sign in credentials):16:5
+                	at Step(I enter password as password):20:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

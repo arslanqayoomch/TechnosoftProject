@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664324828020' stop='1664324843574'>
+    <name>Project 1</name>
+    <title>Project 1</title>
+    <test-cases>
+        <test-case start='1664324828049' status='broken' stop='1664324843561'>
+            <name>TC-21 Verify verification message for invalid sign in credentials</name>
+            <title>TC-21 Verify verification message for invalid sign in credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664324828052' status='passed' stop='1664324833496'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664324833496' status='broken' stop='1664324843560'>
+                    <name>When I click on "Sign in" link</name>
+                    <title>When I click on "Sign in" link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664324843561' status='canceled' stop='1664324843562'>
+                    <name>And I enter "fake@test.com" as email</name>
+                    <title>And I enter "fake@test.com" as email</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664324843563' status='canceled' stop='1664324843564'>
+                    <name>And I enter "##@arslan@!!!" as password</name>
+                    <title>And I enter "##@arslan@!!!" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664324843564' status='canceled' stop='1664324843565'>
+                    <name>And I click on Sign In button</name>
+                    <title>And I click on Sign In button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664324843566' status='canceled' stop='1664324843566'>
+                    <name>Then I verify verification message is displayed</name>
+                    <title>Then I verify verification message is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: element ("#loginFormSubmitButton") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("#loginFormSubmitButton") still not displayed after 10000ms
+                    at C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.wrapCommandFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\a\Desktop\TechnoSoftProject\node_modules\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Commands.findWebElement (C:\Users\a\Desktop\TechnoSoftProject\Pages\Commands.js:3:9)
+                    at async Commands.clickWebElement (C:\Users\a\Desktop\TechnoSoftProject\Pages\Commands.js:21:25)
+                    at async Homepage.clickSignInBtn (C:\Users\a\Desktop\TechnoSoftProject\Pages\Hotels\Homepage.js:188:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

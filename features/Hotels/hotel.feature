@@ -1,30 +1,32 @@
-Feature: Project 1
+eature: Project 1
 
-    @report1
+    @TC-18
     Scenario: TC-18 Verify user can update number of guests on Homepage
-        Given I am on hotels HomePage
+        Given I am on hotels landing page
         When I click on Travelers
-        Then I select adults as 6
-        Then I select children as 3
+        Then I select adults as "6"
+        Then I select children as "3"
         Then I select first child age as 4
         Then I select second child age under 1
         Then I select third child age 7
         When I click Done
         Then I verify total number of guests in sum of adults and children same as selected on step 3 and 4
 
-    @report2
+    @TC-21
     Scenario: TC-21 Verify verification message for invalid sign in credentials
-        Given I am on hotels HomePage
-        When I click on Sign in link
-        And I enter username as email
-        And I enter password as password
+        Given I am on hotels landing page
+        When I click on "Sign in" link
+        And I enter "<username>" as email
+        And I enter "<password>" as password
         When I click on Sign In button
         Then I verify verification message is displayed
-        
+        Examples:
+            | username | password |
+            | arslanCh@test.com | ##@!!%%&  |
     
-    @report3
+    @TC-22
     Scenario: TC-22 Verify error message for invalid data in SignUp form
-        Given I am on hotels Homepage
+        Given I am on hotels landing page
         When I click on "Sign in" link
         When I click on SignUp link
         When I enter "<signupemail>" as invalid email
@@ -40,9 +42,9 @@ Feature: Project 1
             | signupemail | firstname | lastname |  signuppassword    |
             |  #!@### | !@  | %^&  | 123$wg1 |
         
-    @report4
+    @TC-20
     Scenario: TC-20 Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab
-        Given I am on hotels HomePage
+        Given I am on hotels landing page
         When I click on "Sign in" link
         When I click on SignUp link
         When I click on “Terms and Conditions” link
@@ -50,18 +52,18 @@ Feature: Project 1
         When I click “Privacy Statement” link
         Then I verify “Privacy Statement” page opens in new tab
 
-    @report5
+    @TC-24
     Scenario: TC-24 Verify error is displayed when user submits the empty feedback form
-        Given I am on hotels HomePage
+        Given I am on hotels landing page
         When I click on "Sign in"
         When I click on "Feedback"
         When I click on Submit button
         Then I verify error message is displayed "Please fill in the required information highlighted below."
         Then I verify star boxes section is in a red dotted box
 
-    @report6
+    @TC-25
     Scenario: TC-25 Verify user can submit feedback after completing the feedback form
-        Given I am on hotels HomePage
+        Given I am on hotels landing page
         When I click on "Sign in"
         When I click on "Feedback"
         When I select a star-rating
@@ -72,9 +74,9 @@ Feature: Project 1
         When I click on Submit button
         Then I verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed
         
-     @report7
+     @TC-28
     Scenario: TC-28 Verify Child-age dropdowns are same as number of Children selected
-        Given I am on hotels HomePage
+        Given I am on hotels landing page
         When I click on Travelers
         When I select "children" as 2
         When I verify Children-age dropdown are 2
@@ -92,5 +94,3 @@ Feature: Project 1
         Then I verify Children-age dropdown is NOT Displayed
         Then I verify Plus-button is enabled
         Then I verify minus-button is disabled
-
-        
